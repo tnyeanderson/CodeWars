@@ -1,0 +1,13 @@
+#!/bin/bash
+
+TITLE=$1
+
+DIR=$(date '+%Y%m%d%H%M%S')
+README="$DIR/README.md"
+
+mkdir -p "$DIR"
+
+echo "# $TITLE" > "$README"
+
+code "$README"
+
